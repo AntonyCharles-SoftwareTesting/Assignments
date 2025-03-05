@@ -22,9 +22,9 @@ public class Assignment1_DataTypes {
 		
 		//4.Amount of money in a customer's bank account: 1000.50
 		
-		Double money=1000.50000;
-		final DecimalFormat df = new DecimalFormat("0.00");
-		System.out.println("Amount of money in a customer's bank account:"+df.format(money));
+		double money=1000.50;
+		//final DecimalFormat df = new DecimalFormat("0.00");
+		System.out.println("Amount of money in a customer's bank account:"+money);
 	
 		
 		//5.Person's email address: "john.doe@example.com"
@@ -36,9 +36,9 @@ public class Assignment1_DataTypes {
 		
 		double latitude=37.7749;
 		double longitude=-122.4194;
-		//System.out.printf("Coordinates of a location (latitude, longitude):"+latitude,+longitude);
-		System.out.printf("Coordinates of a location (latitude, longitude): %.4f, %.4f\n", latitude, longitude);
-		System.out.println();
+		System.out.println("Coordinates of a location (latitude, longitude):"+latitude+","+longitude);
+		//System.out.printf("Coordinates of a location (latitude, longitude): %.4f, %.4f\n", latitude, longitude);
+		//System.out.println();
 		
 		//7.Person's marital status: true or false 
 		
