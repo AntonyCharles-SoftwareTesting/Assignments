@@ -47,6 +47,9 @@ public class Assignment2_ArrayPractice {
 	            }
 	        };
 
+	        
+	        
+	        
 	        // Print Semester 3 - Subject 4 and Subject 5 Names
 	        System.out.println("Semester 3 - Subject 4: " + semesterData[2][3][0]);
 	        System.out.println("Semester 3 - Subject 5: " + semesterData[2][4][0]);
