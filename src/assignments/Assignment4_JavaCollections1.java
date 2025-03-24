@@ -1,54 +1,64 @@
 package assignments;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Assignment4_JavaCollections1 {
 
 	public static void main(String[] args) {
-	
-	List <String> empid = new ArrayList <String>();
-	List <String> empname = new ArrayList <String>();
-	List <Integer> empage = new ArrayList <Integer>();
-	List <String> empgender = new ArrayList <String>();
-	List <String> empdep = new ArrayList <String>();
-	List <String> empposition = new ArrayList <String>();
-	List <Integer> empsal = new ArrayList <Integer>();
-	List <String> empemail = new ArrayList <String>();
-	List <String> empcontactnum = new ArrayList <String>();
-	
-	empid.add("E001");
-	empid.add("E002");
-	empid.add("E003");
-	empname.add("Alice Green");
-	empname.add("Bob Johnson");
-	empname.add("Carol White");
-	empage.add(30);
-	empage.add(35);
-	empage.add(28);
-	empgender.add("Female");
-	empgender.add("Male");
-	empgender.add("Female");
-	empdep.add("Engineering");
-	empdep.add("Marketing");
-	empdep.add("SalesExecutive");
-	empposition.add("Software Enggineer");
-	empposition.add("Marketing Manager");
-	empposition.add("Sales Executive");
-	empsal.add(75,000);
-	empsal.add(85,000);
-	empsal.add(65,000);
-	empemail.add("alice@example.com");
-	empemail.add("bob@example.com");
-	empemail.add("carol@example.com");
-	empcontactnum.add("9876543213");
-	empcontactnum.add("9876543214");
-	empcontactnum.add("9876543215");
-	
-	
-	System.out.println(empemail.get(1));
-	
+		
+		//Below Employee1Map details are stored using Map(HashMap) 
+		
+				Map<String,String > Employee1Map = new HashMap<String,String>();
+				Employee1Map.put("Employee ID","E001");
+				Employee1Map.put("Name","Alice Green");
+				Employee1Map.put("Age","30");
+				Employee1Map.put("Gender","Female");
+				Employee1Map.put("Department","Engineering");
+				Employee1Map.put("Position","Software Engineer");
+				Employee1Map.put("Salary","75,000");
+				Employee1Map.put("Email","alice@example.com");
+				Employee1Map.put("Contact Number","9876543213");
+				
+				//Below Employee2Map details are stored using Map(HashMap) 
+				
+				Map<String,String > Employee2Map = new HashMap<String,String>();
+				Employee2Map.put("Employee ID","E002");
+				Employee2Map.put("Name","Bob Johnson");
+				Employee2Map.put("Age","35");
+				Employee2Map.put("Gender","Male");
+				Employee2Map.put("Department","Marketing");
+				Employee2Map.put("Position","Marketing Manager");
+				Employee2Map.put("Salary","85,000");
+				Employee2Map.put("Email","bob@example.com");
+				Employee2Map.put("Contact Number","9876543214");
+				
+				//Below Employee3Map details are stored using Map(HashMap) 
+				
+				Map<String,String > Employee3Map = new HashMap<String,String>();
+				Employee3Map.put("Employee ID","E003");
+				Employee3Map.put("Name","Carol White");
+				Employee3Map.put("Age","28");
+				Employee3Map.put("Gender","Female");
+				Employee3Map.put("Department","Sales");
+				Employee3Map.put("Position","Sales Executive");
+				Employee3Map.put("Salary","65,000");
+				Employee3Map.put("Email","carol@example.com");
+				Employee3Map.put("Contact Number","9876543215");
+				
+					
+				//Employee1Map,Employee2Map,Employee3Map details are added under List (empList)
+				
+				List<Map<String,String >> empList = new ArrayList<Map<String,String >>();
+				empList.add(Employee1Map);
+				empList.add(Employee2Map);
+				empList.add(Employee3Map);
+						
+				System.out.println("Email of 2nd row Employee Data: "+empList.get(1).get("Email"));
+					
 
-	}
+			}
 
-}
+		}
